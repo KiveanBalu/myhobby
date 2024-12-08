@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Hobby</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+ <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">My Hobby</label>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="advantage.html">Advantage</a></li>
+       
+    </ul>
+ </nav>
+ <style>
+    * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    padding: 0 100px;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 13px;
+}
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: 0.5s;
+}
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    color: white;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media (max-width : 952px){
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active, a:hover{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    }
+
+ </style>
+  <main>
+    <section class="definition">
+        <h1>What is a Hobby?</h1>
+        <p class="answer">A hobby is something you enjoy doing in your free time. It’s usually something you do for fun and not to make money or be famous. Hobbies can be anything you like, from painting to playing sports.</p>
+    </section>
+
+    <section class="types">
+        <h2>Types of Hobbies</h2>
+        <ul>
+            <li><strong>Creative Hobbies:</strong> Drawing, painting, writing, and other activities where you can express yourself.</li>
+            <li><strong>Physical Hobbies:</strong> Sports, dancing, hiking, or anything that helps you stay active and healthy.</li>
+            <li><strong>Thinking Hobbies:</strong> Reading, solving puzzles, or learning new things that challenge your brain.</li>
+            <li><strong>Social Hobbies:</strong> Doing things with other people, like volunteering or joining a club.</li>
+        </ul>
+    </section>
+
+    <section class="importance">
+        <h2>Why are Hobbies Important?</h2>
+        <p class="answer">Hobbies are important because they:</p>
+        <ul>
+            <li>Give you something fun to do in your free time.</li>
+            <li>Help you relax and forget about work or school stress.</li>
+            <li>Keep you healthy, both in body and mind.</li>
+            <li>Teach you new skills or talents.</li>
+            <li>Help you meet new people and make friends.</li>
+        </ul>
+    </section>
+
+    <section class="conclusion">
+        <h2>Conclusion</h2>
+        <p class="answer">Having a hobby is a great way to enjoy life. It helps you feel happy, learn new things, and be healthy. Find something you love doing, and it will make your life better!</p>
+    </section>
+</main>
+<style>
+/* styles.css */
+
+/* Reset default styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Body and general page styles */
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f9f9f9;
+color: #333;
+padding: 0 20px;
+}
+
+main {
+max-width: 800px;
+margin: 20px auto;
+}
+
+/* Section styling */
+section {
+margin-bottom: 30px;
+}
+
+h1, h2 {
+color: #2C3E50;
+}
+
+h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+h2 {
+font-size: 2rem;
+margin-bottom: 10px;
+}
+
+/* Styling for the types of hobbies section */
+ul {
+list-style-type: square;
+margin-left: 20px;
+}
+
+ul li {
+font-size: 1.1rem;
+margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+font-size: 1.1rem;
+margin-bottom: 15px;
+}
+
+/* Conclusion section styling */
+.conclusion p {
+font-size: 1.2rem;
+}
+
+.answer{
+    color:#fc0000;
+}
+
+</style>
+ </body>
+</html>
